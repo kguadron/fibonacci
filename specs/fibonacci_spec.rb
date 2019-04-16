@@ -2,6 +2,8 @@ require 'minitest/autorun'
 require 'minitest/reporters'
 require_relative '../lib/fibonacci'
 
+Minitest::Reporters.use! Minitest::Reporters::SpecReporter.new
+
 describe "fibonacci" do
   describe "basic tests" do
     it "fibonacci of 1" do
